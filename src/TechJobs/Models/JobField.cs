@@ -21,7 +21,7 @@
         // Provide a basic case-insensitive search
         public bool Contains(string testValue)
         {
-            return Value.ToLower().Contains(testValue.ToLower());
+            return Value.ToLower().Contains(testValue.ToLower());  //??does this change the actual Value string to all lower for the return(ie. launchcode,not Launchcode)
         }
 
         public override string ToString()
@@ -29,7 +29,7 @@
             return Value;
         }
 
-        // override object.Equals
+        // override object.Equals          //??object is part of system?
         public override bool Equals(object obj)
         {
 
@@ -44,7 +44,7 @@
         // override object.GetHashCode
         public override int GetHashCode()
         {
-            return ID;
+            return ID;    
         }
 
     }
